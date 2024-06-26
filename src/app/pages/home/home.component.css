@@ -1,0 +1,29 @@
+.hero{
+  width: 100%;
+  height: 100vh;
+  background: #F7AFD5;
+}
+
+
+.hero-logo{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+
+.hero-body{
+  display: flex;
+  align-items: center;
+  gap: 130px;
+}
+
+
+.hero-text{
+  font-size: 70px;
+  max-width: 430px;
+  width: 100%;
+  line-height: 100px;
+  font-family: "Marck Script", cursive;
+  color: #fff;
+}

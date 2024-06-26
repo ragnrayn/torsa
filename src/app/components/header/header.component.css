@@ -1,0 +1,43 @@
+header{
+  width: 100%;
+  position: relative;
+}
+
+
+.header-container__body{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.header-menu__left ul, .header-menu__right ul{
+  display: flex;
+  align-items: center;
+  gap: 80px;
+
+  height: 100%;
+
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+
+.header-menu__left ul li a, .header-menu__right ul li a{
+  color: #fff;
+  text-decoration: none;
+  
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+
+.header-menu__left ul li a:hover, .header-menu__right ul li a:hover{
+  font-weight: bold;
+  letter-spacing: 0;
+  color: #DF267F;
+}
+
