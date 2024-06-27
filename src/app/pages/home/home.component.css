@@ -1,9 +1,24 @@
 .hero{
   width: 100%;
   height: 100vh;
-  background: #F7AFD5;
+  background-color: #F7AFD5;
+  z-index: 1;
+  position: relative;
 }
 
+.hero::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("https://s3-alpha-sig.figma.com/img/6bd7/e6ca/8ad58f63f37fe0faecfc80ada0ca7ca1?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Gw7vn7VxnbV~zqcCuoomc9h763LrrXMZqG8YN~sNWgGVpcqrPY0ZwBJU4J6s4N1Z4ytUK8fw8cgCZI99SxBEI3F9UuF0CwflZOF1cMc9arHRA8F9B7CfNZxjoQ-LbipwFwhtPAMZtz6Dd~uTeBWXLlt~iL~1KY81XnyE5t8tnVP4E~1INPY4exg7sl0nec1TmMrsl1TcpByc20utQ8sk9rD41hrXKwmcAZb9n4sFQe8TIDllapgC2R5Hr-55T58sYeXOSQ1s1Si4zDH4wQquibBYchugErgdKEUv9L0GUTQIxFabfmru5aTxQ9cokz1Z0ak~1ilzrN4lDrPDHma3WQ__");
+  background-repeat: repeat-x;
+  background-size: contain;
+  opacity: .1;
+  z-index: -1;
+}
 
 .hero-logo{
   display: flex;
@@ -26,4 +41,28 @@
   line-height: 100px;
   font-family: "Marck Script", cursive;
   color: #fff;
+}
+
+
+/* New styles */
+
+.new{
+  width: 100%;
+  height: 100vh;
+  background-color: #FFF7F1;
+  position: relative;
+  overflow-x: clip;
+}
+
+.new::before{
+  content: "";
+  width: 110%;
+  height: 227px;
+  position: absolute;
+  z-index: 3;
+  top: -150px;
+  left: -35px;
+  background: url("/papper.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
